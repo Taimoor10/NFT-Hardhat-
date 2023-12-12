@@ -1,0 +1,29 @@
+{
+  "name": "nft(hardhat-typescript)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test --typecheck",
+    "deploy": "npx hardhat run --network localhost scripts/deploy.ts --typecheck",
+    "contract": "npx hardhat run --network localhost src/ERC721.ts --typecheck"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.2.1",
+    "chai": "^4.3.7",
+    "hardhat": "^2.14.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.6",
+    "prettier": "^2.8.8"
+  }
+}
